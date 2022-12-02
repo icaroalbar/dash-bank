@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`bg-primary-900 h-full fixed lg:static w-[80%] md:w-[40%] lg:w-full transition-all z-50 pt-20 duration-300 ${showMenu ? "left-0" : "-left-full"
+        className={`bg-primary-900 flex-col justify-between h-full fixed lg:static w-[80%] md:w-[40%] lg:w-full transition-all z-50 pt-20 duration-300 ${showMenu ? "left-0" : "-left-full"
           }`}
       >
         {/* Profile */}
@@ -33,35 +33,12 @@ const Sidebar = () => {
           </div>
         </div>
         {/* Nav */}
-        {/* <div className="bg-primary-300 p-8 rounded-tr-[100px] h-[70vh] overflow-y-scroll flex flex-col justify-between gap-8">
-          <nav className="flex flex-col gap-8">
-            <a
-              href="#"
-              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
-            >
-              <RiHome3Line /> Home
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
-            >
-              <RiFileCopyLine /> Projects
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
-            >
-              <RiWalletLine /> Invoices
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
-            >
-              <RiPieChartLine /> Reports
-            </a>
-          </nav>
-
-        </div> */}
+        <div className="flex justify-center mt-80">
+          <img
+            src="logoBank.svg"
+            className="w-20 h-20 object-cover"
+          />
+        </div>
       </div>
       {/* Button mobile */}
       <button
